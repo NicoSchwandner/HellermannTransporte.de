@@ -1,6 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
-
-const config: GatsbyConfig = {
+const config = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
   },
@@ -9,6 +7,6 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [],
-}
+};
 
-export default config
+module.exports = config;
