@@ -8,6 +8,7 @@ const Seo = ({ title, description, pathname, children }) => {
     image,
     siteUrl,
     phoneNumber /*, twitterUsername */,
+    email,
   } = useSiteMetadata();
 
   const seo = {
@@ -16,6 +17,7 @@ const Seo = ({ title, description, pathname, children }) => {
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
     phoneNumber: phoneNumber,
+    email: email,
     // twitterUsername,
   };
 
@@ -25,6 +27,7 @@ const Seo = ({ title, description, pathname, children }) => {
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta name="phone number" content={seo.phoneNumber} /> {/*TODO Check if this is a valid meta tag */}
+      <meta name="email" content={seo.email} /> {/*TODO Check if this is a valid meta tag */}
       {/* <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />

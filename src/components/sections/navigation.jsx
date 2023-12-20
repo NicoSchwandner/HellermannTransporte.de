@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { navLinks, navLinkItem, navLinkText } from "./layout.module.css";
+import { navLinks, navLinkItem, navLinkText } from "./navigation.module.css";
 
 const Navigation = () => {
   return (

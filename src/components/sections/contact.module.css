@@ -1,0 +1,15 @@
+.contactContainer {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+
+.linkItem {
+  padding-right: 2rem;
+}
+
+.linkText {
+  color: #ffffff;
+}

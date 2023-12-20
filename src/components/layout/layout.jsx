@@ -1,7 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { body, container, heading } from "./layout.module.css";
-import Navigation from "./navigation";
+import { container, heading } from "./layout.module.css";
 import Footer from "./footer";
 import Header from "./header";
 import Seo from "../utility/seo";
@@ -27,7 +26,6 @@ const Layout = ({ pageTitle, children }) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
-      <Navigation />
       <Footer />
     </div>
   );
