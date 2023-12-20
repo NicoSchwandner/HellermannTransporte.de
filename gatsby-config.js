@@ -1,19 +1,28 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My First Gatsby Site",
+    siteUrl: "https://www.hellermann-transporte.de/",
+    title: "Hellermann Transporte e.K.",
+    description: "Website of Hellermann Transporte e.K.",
+    // twitterUsername: "@gatsbyjs",
+    // image: "/gatsby-icon.png",
+    phoneNumber: "+49 1761 9450 998",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
-    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Hellermann Transporte e.K.`,
+        short_name: `Hellermann Transporte`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`,
+      },
+    },
   ],
 };
