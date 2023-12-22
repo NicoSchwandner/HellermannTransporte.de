@@ -23,12 +23,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px;
+  padding: 27px;
   background-color: #ffffff;
 }
 
 .footerContainer {
-  padding: 22px;
+  padding: 27px;
   background-color: #000000;
   color: #ffffff;
   line-height: 140%;

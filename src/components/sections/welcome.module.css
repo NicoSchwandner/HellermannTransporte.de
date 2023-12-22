@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 22px; */
+  /* padding: 27px; */
   background-color: #000000;
-  gap: 22px;
+  gap: 27px;
 }
 
 .backgroundImage {
@@ -30,7 +30,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 22px;
+  padding: 27px;
   text-wrap: balance;
 }
 
@@ -40,7 +40,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 0 22px 0 22px;
+  /* padding: 0 27px 0 27px; */
 }
 
 .welcomePhoneNumber {
@@ -52,7 +52,7 @@
   font-size: 1.7rem;
   font-weight: 400;
   line-height: normal;
-  padding: 10px 22px 0 22px;
+  /* padding: 10px 27px 0 27px; */
   /* text-decoration: none; */
 }
 
@@ -66,4 +66,29 @@
 
 .noDefaultUnderline a:hover {
   text-decoration: underline;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  gap: 15px;
+}
+
+.callToActionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.callToActionText {
+  color: #fff;
+  font-family: "Patua One", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 27px 0 27px;
+  font-size: 1.7rem;
+  text-align: center;
 }
