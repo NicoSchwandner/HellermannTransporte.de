@@ -23,7 +23,7 @@ const Layout = ({ pageTitle, children }) => {
       <StaticImports />
       <Header pageTitle={data.site.siteMetadata.title} />
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
+        {pageTitle ? <h1 className={heading}>{pageTitle}</h1> : null}
         {children}
       </main>
       <Footer />

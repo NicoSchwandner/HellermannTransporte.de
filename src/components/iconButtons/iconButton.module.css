@@ -1,3 +1,7 @@
-.iconButton {
+.iconButtonPrimary {
   color: #000000;
+}
+
+.iconButtonSecondary {
+  color: #ffffff;
 }
