@@ -53,15 +53,23 @@
   line-height: normal;
 }
 
-/* .welcomePhoneNumber a:hover {
+.welcomePhoneNumber a:hover {
   text-decoration: underline;
-} */
+}
 
-.noDefaultUnderline {
+a:hover .welcomePhoneNumber {
+  text-decoration: underline;
+}
+
+.noDefaultUnderline a {
   text-decoration: none;
 }
 
-.noDefaultUnderline a:hover {
+.noDefaultUnderline a:hover div {
+  text-decoration: underline;
+}
+
+a:hover .noDefaultUnderline div {
   text-decoration: underline;
 }
 

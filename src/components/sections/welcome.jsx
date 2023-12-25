@@ -43,15 +43,17 @@ const Welcome = () => {
           <br />
           Bei Fragen bitte einfach anrufen!
         </p>
-        <a
-          href={`tel:${phoneNumber}`}
-          className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber} ${noDefaultUnderline}`} //TODO fix underline on hover
-        >
-          <span className={`material-symbols-outlined ${iconButtonSecondary}`} style={{ fontSize: "30px" }}>
-            call
-          </span>
-          {phoneNumber}
-        </a>
+        <div className={noDefaultUnderline}>
+          <a
+            href={`tel:${phoneNumber}`}
+            className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber}`} //TODO fix underline on hover
+          >
+            <span className={`material-symbols-outlined ${iconButtonSecondary}`} style={{ fontSize: "30px" }}>
+              call
+            </span>
+            <div className={welcomePhoneNumber}>{phoneNumber}</div>
+          </a>
+        </div>
       </div>
       <Activities />
       <div className={sectionContainer}>
@@ -60,15 +62,17 @@ const Welcome = () => {
           <br />
           Einfach anrufen!
         </p>
-        <a
-          href={`tel:${phoneNumber}`}
-          className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber} ${noDefaultUnderline}`} //TODO fix underline on hover
-        >
-          <span className={`material-symbols-outlined ${iconButtonSecondary}`} style={{ fontSize: "30px" }}>
-            call
-          </span>
-          {phoneNumber}
-        </a>
+        <div className={noDefaultUnderline}>
+          <a
+            href={`tel:${phoneNumber}`}
+            className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber}`} //TODO fix underline on hover
+          >
+            <span className={`material-symbols-outlined ${iconButtonSecondary}`} style={{ fontSize: "30px" }}>
+              call
+            </span>
+            <div className={welcomePhoneNumber}>{phoneNumber}</div>
+          </a>
+        </div>
       </div>
     </div>
   );
