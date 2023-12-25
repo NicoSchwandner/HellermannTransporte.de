@@ -1,15 +1,25 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { Layout } from "components";
+import { standardContent } from "../components/layout/layout.module.css";
+import { navLinkText } from "../components/sections/navigation.module.css";
 
 function NotFoundPage() {
   return (
-    <Layout pageTitle="Page not found">
-      <p>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <Layout pageTitle="Diese Seite haben wir noch nicht">
+      <div className={standardContent}>
+        <p>
+          Das tut uns leid! 😔
+          <br />
+          <br />
+          Falls du denkst, dass das ein Fehler ist, dann melde dich gerne bei uns!
+          <br />
+          <br />
+          <Link to="/" className={navLinkText}>
+            Zurück zur Startseite
+          </Link>
+        </p>
+      </div>
     </Layout>
   );
 }

@@ -12,13 +12,13 @@ const Navigation = () => {
           </Link>
         </li>
         <li className={navLinkItem}>
-          <Link to="/about" className={navLinkText}>
-            About
+          <Link to="/dsgvo" className={navLinkText}>
+            Datenschutzerklärung
           </Link>
         </li>
         <li className={navLinkItem}>
-          <Link to="/404" className={navLinkText}>
-            404
+          <Link to="/impressum" className={navLinkText}>
+            Impressum
           </Link>
         </li>
       </ul>

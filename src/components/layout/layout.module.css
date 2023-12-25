@@ -17,6 +17,7 @@
   margin: auto;
   max-width: 500px;
   font-family: sans-serif;
+  background-color: black;
 }
 
 .headerContainer {
@@ -40,7 +41,10 @@
 }
 
 .heading {
-  color: rebeccapurple;
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 27px 27px 0 27px;
 }
 
 .site-title {
@@ -54,4 +58,56 @@
   width: 175px;
   height: 100%;
   object-fit: contain;
+}
+
+.content .standardContent {
+  padding: 27px;
+  /* background-color: black; */
+}
+
+.content .standardContent h1 {
+  font-size: 2.5em;
+  color: #fff; /* White */
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.content .standardContent h2 {
+  font-size: 2em;
+  color: #fff; /* White */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content .standardContent h3 {
+  font-size: 1.75em;
+  color: #ccc; /* Lighter Gray */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.content .standardContent h4 {
+  font-size: 1.5em;
+  color: #999; /* Gray */
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.content .standardContent p,
+.content .standardContent ul,
+.content .standardContent ol {
+  font-size: 1em;
+  color: #fff; /* White */
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.content .standardContent ul,
+.content .standardContent ol {
+  margin-left: 1rem;
+}
+
+.content .standardContent a {
+  color: #5b63bc; /* White */
+  /* text-decoration: underline; */
 }

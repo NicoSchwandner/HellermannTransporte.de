@@ -1,25 +1,5 @@
-// import React from "react";
-// import { section, titleText, descriptionText } from "./section.module.css";
-
-// const Section = ({ title, description, imagePath }) => (
-//   <section className={section} style={{ backgroundImage: `url(${imagePath})` }}>
-//     <h1 className={titleText}>{title}</h1>
-//     <p className={descriptionText}>{description}</p>
-//   </section>
-// );
-
-// export default Section;
-
 import React from "react";
-import {
-  section,
-  titleText,
-  descriptionText,
-  image,
-  content,
-  backgroundImage,
-  hoverBackground,
-} from "./section.module.css";
+import { section, titleText, descriptionText, content, backgroundImage, hoverBackground } from "./section.module.css";
 
 const Section = ({ title, description, imagePath }) => {
   return (
