@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { headerContainer, titleLogo, header } from "./layout.module.css";
+import { /*headerContainer,*/ titleLogo, header } from "./layout.module.css";
 import { navLinkText } from "../sections/navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { PhoneButton } from "components";
@@ -10,7 +10,7 @@ const Header = ({ pageTitle }) => {
   const { phoneNumber } = useSiteMetadata();
 
   return (
-    <header className={headerContainer}>
+    <header /*className={headerContainer}*/>
       <div className={header}>
         <Link to="/" className={navLinkText}>
           <StaticImage src="../../images/logo.png" alt={pageTitle} className={titleLogo} />
