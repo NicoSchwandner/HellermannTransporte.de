@@ -9,7 +9,7 @@ const Section = ({ title, description, imagePath }) => {
         className={`${section} ${backgroundImage}`} //${profileImage}
       >
         <div className={`${content} ${hoverBackground}`}>
-          <p className={descriptionText}>{description}</p>
+          <p className={descriptionText}>{description}</p> {/*TODO: FIx so thtz line breaks work */}
           <h1 className={titleText}>{title}</h1>
         </div>
       </div>

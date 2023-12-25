@@ -44,10 +44,7 @@ const Welcome = () => {
           Bei Fragen bitte einfach anrufen!
         </p>
         <div className={noDefaultUnderline}>
-          <a
-            href={`tel:${phoneNumber}`}
-            className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber}`} //TODO fix underline on hover
-          >
+          <a href={`tel:${phoneNumber}`} className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber}`}>
             <span className={`material-symbols-outlined ${iconButtonSecondary}`} style={{ fontSize: "30px" }}>
               call
             </span>
@@ -63,10 +60,7 @@ const Welcome = () => {
           Einfach anrufen!
         </p>
         <div className={noDefaultUnderline}>
-          <a
-            href={`tel:${phoneNumber}`}
-            className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber}`} //TODO fix underline on hover
-          >
+          <a href={`tel:${phoneNumber}`} className={`icon-button ${iconButtonSecondary} ${welcomePhoneNumber}`}>
             <span className={`material-symbols-outlined ${iconButtonSecondary}`} style={{ fontSize: "30px" }}>
               call
             </span>
