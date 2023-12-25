@@ -40,7 +40,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  /* padding: 0 27px 0 27px; */
 }
 
 .welcomePhoneNumber {
@@ -52,8 +51,6 @@
   font-size: 1.7rem;
   font-weight: 400;
   line-height: normal;
-  /* padding: 10px 27px 0 27px; */
-  /* text-decoration: none; */
 }
 
 /* .welcomePhoneNumber a:hover {
@@ -71,7 +68,7 @@
 .sectionContainer {
   display: flex;
   flex-direction: column;
-  padding: 27px;
+  padding: 0 27px 0 27px;
   gap: 15px;
 }
 

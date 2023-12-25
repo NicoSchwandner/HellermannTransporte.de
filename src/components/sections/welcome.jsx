@@ -13,9 +13,22 @@ import {
 import profilePicture from "../../images/profile.png";
 import { iconButtonSecondary } from "../iconButtons/iconButton.module.css";
 import useSiteMetadata from "../../hooks/useSiteMetadata";
+import Activities from "./activities";
 
 const Welcome = () => {
   const { phoneNumber } = useSiteMetadata();
+
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     profilePicture: file(relativePath: { eq: "profile.png" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(width: 200, layout: CONSTRAINED)
+  //       }
+  //     }
+  //   }
+  // `);
+
+  // const image = getImage(data.profilePicture);
 
   return (
     <div className={weclomeContainer}>
@@ -40,7 +53,7 @@ const Welcome = () => {
           {phoneNumber}
         </a>
       </div>
-      <div>Bilder</div>
+      <Activities />
       <div className={sectionContainer}>
         <p className={callToActionText}>
           Fragen?

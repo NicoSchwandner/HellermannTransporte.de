@@ -1,0 +1,6 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 27px 0 27px;
+  gap: 27px;
+}
