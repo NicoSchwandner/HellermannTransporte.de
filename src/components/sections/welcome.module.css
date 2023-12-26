@@ -4,12 +4,12 @@
   justify-content: center;
   align-items: center;
   /* padding: 27px; */
-  background-color: #000000;
+  background-color: #ffffff;
   gap: 27px;
 }
 
 .backgroundImage {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 44.79%, #000 100%), var(--background-image);
+  background: linear-gradient(180deg, #ffffff00 0%, #ffffff00 44.79%, #ffffff 100%), var(--background-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .welcomeTitle {
-  color: #fff;
+  color: #000000;
   text-align: center;
   font-family: "Patua One", serif;
   font-size: 1.7rem;
@@ -35,7 +35,7 @@
 }
 
 .welcomeText {
-  color: #fff;
+  color: #000000;
   font-family: "Patua One", serif;
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@
 .welcomePhoneNumber {
   display: flex;
   gap: 10px;
-  color: #fff;
+  color: #000000;
   font-family: "Patua One", serif;
   font-style: normal;
   font-size: 1.7rem;
@@ -88,7 +88,7 @@ a:hover .noDefaultUnderline div {
 }
 
 .callToActionText {
-  color: #fff;
+  color: #000000;
   font-family: "Patua One", serif;
   font-style: normal;
   font-weight: 400;
