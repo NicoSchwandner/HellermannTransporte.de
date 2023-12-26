@@ -17,7 +17,7 @@
   margin: auto;
   max-width: 500px;
   font-family: sans-serif;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 /* .headerContainer {
@@ -33,7 +33,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 27px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .footerContainer {
@@ -75,28 +75,28 @@
 
 .content .standardContent h1 {
   font-size: 2.5em;
-  color: #fff; /* White */
+  color: #000000; /* White */
   margin-bottom: 25px;
   font-weight: 700;
 }
 
 .content .standardContent h2 {
   font-size: 2em;
-  color: #fff; /* White */
+  color: #000000; /* White */
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .content .standardContent h3 {
   font-size: 1.75em;
-  color: #ccc; /* Lighter Gray */
+  color: #444444; /* Lighter Gray */
   margin-bottom: 15px;
   font-weight: 700;
 }
 
 .content .standardContent h4 {
   font-size: 1.5em;
-  color: #999; /* Gray */
+  color: #888888; /* Gray */
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -105,7 +105,7 @@
 .content .standardContent ul,
 .content .standardContent ol {
   font-size: 1em;
-  color: #fff; /* White */
+  color: #000000; /* White */
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -116,6 +116,6 @@
 }
 
 .content .standardContent a {
-  color: #5b63bc; /* White */
+  color: #12196c; /* White */
   /* text-decoration: underline; */
 }
