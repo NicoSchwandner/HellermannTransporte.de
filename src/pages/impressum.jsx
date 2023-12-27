@@ -6,7 +6,7 @@ import { navLinkText } from "../components/sections/navigation.module.css";
 
 const Impressum = () => {
   return (
-    <Layout pageTitle="Impressum">
+    <Layout pageTitle="Impressum" pathName="impressum">
       <div className={standardContent}>
         <p>
           <Link to="/" className={navLinkText}>

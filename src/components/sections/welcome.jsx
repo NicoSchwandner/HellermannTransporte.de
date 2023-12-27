@@ -18,18 +18,6 @@ import Activities from "./activities";
 const Welcome = () => {
   const { phoneNumber } = useSiteMetadata();
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     profilePicture: file(relativePath: { eq: "profile.png" }) {
-  //       childImageSharp {
-  //         gatsbyImageData(width: 200, layout: CONSTRAINED)
-  //       }
-  //     }
-  //   }
-  // `);
-
-  // const image = getImage(data.profilePicture);
-
   return (
     <div className={weclomeContainer}>
       <div style={{ "--background-image": `url(${profilePicture})` }} className={`${backgroundImage} ${profileImage}`}>

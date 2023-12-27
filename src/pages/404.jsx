@@ -6,7 +6,7 @@ import { navLinkText } from "../components/sections/navigation.module.css";
 
 function NotFoundPage() {
   return (
-    <Layout pageTitle="Diese Seite haben wir noch nicht">
+    <Layout pageTitle="Diese Seite haben wir noch nicht" pathName="404">
       <div className={standardContent}>
         <p>
           Das tut uns leid! 😔
