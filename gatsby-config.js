@@ -1,6 +1,8 @@
+const siteUrl = "https://www.hellermann-transporte.de";
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.hellermann-transporte.de/",
+    siteUrl: siteUrl,
     title: "Hellermann Transporte e.K.",
     businessName: "Hellermann Transporte e.K.",
     owner: "Inh. Alexander Hellermann",
@@ -35,6 +37,28 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => allPages,
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          };
+        },
       },
     },
   ],
