@@ -1,10 +1,13 @@
+const siteUrl = "https://www.hellermann-transporte.de";
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.hellermann-transporte.de/",
+    siteUrl: siteUrl,
     title: "Hellermann Transporte e.K.",
     businessName: "Hellermann Transporte e.K.",
     owner: "Inh. Alexander Hellermann",
-    description: "Website of Hellermann Transporte e.K.",
+    description:
+      "Hellermann Transporte e.K. ist ein junges und dynamisches Unternehmen, welches sich auf diverse Arbeiten rund um Transporte, Hausbau, -abriss und Entsorgung spezialisiert hat.",
     // twitterUsername: "@gatsbyjs",
     // image: "/gatsby-icon.png",
     phoneNumber: "+49 1761 9450 998",
@@ -16,6 +19,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -33,6 +37,28 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => allPages,
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          };
+        },
       },
     },
   ],

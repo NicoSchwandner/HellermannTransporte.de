@@ -6,7 +6,7 @@ import { navLinkText } from "../components/sections/navigation.module.css";
 
 const Dsgvo2 = () => {
   return (
-    <Layout pageTitle="Datenschutzerklärung">
+    <Layout pageTitle="Datenschutzerklärung" pathName="dsgvo">
       <div className={standardContent}>
         <p>
           <Link to="/" className={navLinkText}>

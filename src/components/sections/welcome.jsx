@@ -18,18 +18,6 @@ import Activities from "./activities";
 const Welcome = () => {
   const { phoneNumber } = useSiteMetadata();
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     profilePicture: file(relativePath: { eq: "profile.png" }) {
-  //       childImageSharp {
-  //         gatsbyImageData(width: 200, layout: CONSTRAINED)
-  //       }
-  //     }
-  //   }
-  // `);
-
-  // const image = getImage(data.profilePicture);
-
   return (
     <div className={weclomeContainer}>
       <div style={{ "--background-image": `url(${profilePicture})` }} className={`${backgroundImage} ${profileImage}`}>
@@ -37,8 +25,8 @@ const Welcome = () => {
       </div>
       <div className={sectionContainer}>
         <p className={welcomeText}>
-          Wir sind ein kleines Familienunternehmen, welches sich auf diverse Arbeiten rund um Hausbau, -abriss und
-          Entsorgung spezialisiert hat.
+          Wir sind ein kleines Familienunternehmen, welches sich auf diverse Arbeiten rund um Transporte, Hausbau,
+          -abriss und Entsorgung spezialisiert hat.
           <br />
           <br />
           Bei Fragen bitte einfach anrufen!
