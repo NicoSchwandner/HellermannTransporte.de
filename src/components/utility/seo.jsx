@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import useSiteMetadata from "../../hooks/useSiteMetadata";
 
 const Seo = ({ title, description, pathname, children }) => {
@@ -22,7 +23,7 @@ const Seo = ({ title, description, pathname, children }) => {
   };
 
   return (
-    <>
+    <Helmet>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -39,7 +40,7 @@ const Seo = ({ title, description, pathname, children }) => {
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
       />
       {children}
-    </>
+    </Helmet>
   );
 };
 
