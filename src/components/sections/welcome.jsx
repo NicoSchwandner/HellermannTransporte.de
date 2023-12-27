@@ -37,8 +37,8 @@ const Welcome = () => {
       </div>
       <div className={sectionContainer}>
         <p className={welcomeText}>
-          Wir sind ein kleines Familienunternehmen, welches sich auf diverse Arbeiten rund um Hausbau, -abriss und
-          Entsorgung spezialisiert hat.
+          Wir sind ein kleines Familienunternehmen, welches sich auf diverse Arbeiten rund um Transporte, Hausbau,
+          -abriss und Entsorgung spezialisiert hat.
           <br />
           <br />
           Bei Fragen bitte einfach anrufen!
