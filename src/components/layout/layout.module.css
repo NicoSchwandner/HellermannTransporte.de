@@ -103,6 +103,7 @@
   color: #fff; /* White */
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .content .standardContent ul,
