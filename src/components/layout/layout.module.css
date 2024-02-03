@@ -12,7 +12,7 @@
 }
 
 .body {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .container {
@@ -20,7 +20,7 @@
   min-width: 320px;
   max-width: 500px;
   font-family: sans-serif;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .header {
@@ -33,8 +33,8 @@
 
 .footerContainer {
   padding: 27px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   line-height: 140%;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .heading {
-  color: #ffffff;
+  color: #000000;
   font-size: 2.5em;
   font-weight: 700;
   padding: 27px 27px 0 27px;
@@ -70,28 +70,28 @@
 
 .content .standardContent h1 {
   font-size: 2.5em;
-  color: #fff; /* White */
+  color: #000000; /* White */
   margin-bottom: 25px;
   font-weight: 700;
 }
 
 .content .standardContent h2 {
   font-size: 2em;
-  color: #fff; /* White */
+  color: #000000; /* White */
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .content .standardContent h3 {
   font-size: 1.75em;
-  color: #ccc; /* Lighter Gray */
+  color: #444444; /* Lighter Gray */
   margin-bottom: 15px;
   font-weight: 700;
 }
 
 .content .standardContent h4 {
   font-size: 1.5em;
-  color: #999; /* Gray */
+  color: #888888; /* Gray */
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -100,7 +100,7 @@
 .content .standardContent ul,
 .content .standardContent ol {
   font-size: 1em;
-  color: #fff; /* White */
+  color: #000000; /* White */
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: justify;
@@ -112,6 +112,6 @@
 }
 
 .content .standardContent a {
-  color: #5b63bc; /* White */
+  color: #12196c; /* White */
   /* text-decoration: underline; */
 }
