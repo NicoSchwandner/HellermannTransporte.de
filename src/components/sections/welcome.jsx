@@ -10,7 +10,7 @@ import {
   sectionContainer,
   callToActionText,
 } from "./welcome.module.css";
-import profilePicture from "../../images/profile.png";
+import profilePicture from "../../images/truck.jpg";
 import { iconButtonSecondary } from "../iconButtons/iconButton.module.css";
 import useSiteMetadata from "../../hooks/useSiteMetadata";
 import Activities from "./activities";
